@@ -101,7 +101,7 @@ let BackupList = Library.FileList;
         // Jsoup을 사용해 GET 요청 보내기
         let releases = org.jsoup.Jsoup.connect(GITHUB_API_URL)
           .header("Accept", "application/vnd.github+json")
-          .header("Authorization", "Bearer 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")
+          .header("Authorization", `Bearer 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`)
           .header("X-GitHub-Api-Version", "2022-11-28")
           .ignoreContentType(true)
           .ignoreHttpErrors(true)
